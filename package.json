@@ -1,0 +1,7 @@
+{
+    "scripts": {
+        "front": "npm run dev --prefix front",
+        "strapi": "npm run develop --prefix back-strapi",
+        "dev": "concurrently \"npm run strapi\" \"npm run front\""
+    }
+}
