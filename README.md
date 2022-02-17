@@ -100,8 +100,7 @@ dans pages/exemples, il y a une liste des exemples simple pour recuperer les inf
 
 ### pages/index.vue
 - [ ] recuperer toutes les données de l'api strapi
-- [ ] Update the website
-- [ ] Contact the media
+
 
 ### pages/admin/posts/index.vue
 - [ ] ajouter la liste des articles
