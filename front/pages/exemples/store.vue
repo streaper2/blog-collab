@@ -5,7 +5,8 @@
       <button @click="decrement" >-</button>
       <button @click="increment" >+</button>
 
-      <div v-for="article in articles" :key='article.attributes.id' > 
+      <div v-for="article in articles" :key='article.attributes.id' >
+          
           <ArticleCard :title="article.attributes.Name"  :desc="article.attributes.description" />
  
       </div>
