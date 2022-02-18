@@ -1,12 +1,7 @@
+//ici on aura les differents state du store.
+
 export const state = () => ({
-    counter: 0
+    counter: 0,
+    articles: [],
   })
   
-  export const mutations = {
-    increment(state) {
-      state.counter++
-    },
-    decrement(state){
-        state.counter--
-    }
-  }
