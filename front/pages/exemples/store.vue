@@ -4,6 +4,11 @@
       <p>{{ count }} </p> 
       <button @click="decrement" >-</button>
       <button @click="increment" >+</button>
+
+      <div v-for="article in articles" :key='article.attributes.id' > 
+          <ArticleCard :title="article.attributes.Name"  :desc="article.attributes.description" />
+ 
+      </div>
   </div>
 </template>
 
@@ -17,14 +22,21 @@ export default {
     computed: {
         count(){
             return this.$store.state.counter
+        },
+        articles(){
+            return this.$store.state.articles
         }
+    },
+    mounted() {
+        this.$store.dispatch('getArticles')
+    
     },
     methods: {
         increment() {
-            this.$store.commit("increment")
+            this.$store.dispatch("increment")
         },
         decrement() {
-            this.$store.commit("decrement")
+            this.$store.dispatch("decrement")
         }
     },
 }

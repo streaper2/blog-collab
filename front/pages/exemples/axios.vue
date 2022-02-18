@@ -3,15 +3,19 @@
       <h1>AXIOS</h1>
       <br />
       
+      
       <div v-for="drink in drinks" :key="drink.idDrink">
-
-        <b-card
+          <nuxt-link :to="'/update/'+drink.idDrink">
+            <PostCard :title="drink.strDrink" :img="drink.strDrinkThumb" />
+          </nuxt-link>
+          
+        <!-- <b-card
             img-top
             :title="drink.strDrink"
             :img-src="drink.strDrinkThumb"
             style="width: 18rem;"
             class="mb-5">
-        </b-card>
+        </b-card> -->
      
       </div>
       
