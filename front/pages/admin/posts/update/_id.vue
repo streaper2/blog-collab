@@ -11,8 +11,7 @@ export default {
    computed:{
     article(){
       return this.$store.state.articles[this.$route.params.id -1]
-    }
-    
+    },
   },
 }
 </script>
