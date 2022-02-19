@@ -25,5 +25,8 @@ export default {
 <style>
     b-card {
         border: 2px solid burlywood;
+        cursor: pointer;
     }
+
+  
 </style>
