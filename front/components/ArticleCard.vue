@@ -6,7 +6,6 @@
                 <p class="card-text">{{article.attributes.description | truncate(10)}}</p>
                 <a href="#" class="btn btn-primary">Read</a>
             </div>
-         
      </div>
         
 </template>
