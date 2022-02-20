@@ -9,7 +9,7 @@
 export default {
   //a ameliorer pour tester de le recup avec le getter
    computed:{
-    article(){
+    article(){  
       return this.$store.state.articles[this.$route.params.id -1]
     },
   },
