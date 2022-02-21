@@ -13,6 +13,7 @@
 import Vue from 'vue'
 
 export default Vue.extend({
+    
     computed:{
     articles(){
         return this.$store.state.articles
@@ -21,7 +22,9 @@ export default Vue.extend({
    mounted() {
         this.$store.dispatch('getArticles')
     
-    }
+    },
+    
+    
 })
 </script>
 

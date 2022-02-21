@@ -1,13 +1,16 @@
 <template>
-        <div>
-          
-      <p>{{article}}</p>
-        </div>  
+    <div> 
+        <p>{{article.attributes.Name}}</p>
+        <article>
+          {{article.attributes.description}}
+        </article>
+    </div>  
         
 </template>
 
 <script>
 export default {
+  layout: 'header',
     async asyncData({ params }) {
       const slug = params.id // En appelant /abc, le slug sera "abc".
       return { slug }
