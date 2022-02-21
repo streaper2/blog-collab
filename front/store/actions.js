@@ -34,7 +34,7 @@ export default {
       
             
         });
-
+        
     },
     //permet de supprimer un article via strapi
     deleteArticle({commit},id){
