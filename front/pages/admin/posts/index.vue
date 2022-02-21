@@ -18,6 +18,7 @@ export default {
     mounted() {
         this.$store.dispatch('getArticles')
     },
+    layout: 'blog'
 }
 </script>
 
