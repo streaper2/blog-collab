@@ -5,8 +5,9 @@
                 <b-col cols="11"  @click.prevent="toUpdatePage" >
                     {{ art.attributes.Name || 'No title' }}
                 </b-col>
-                <b-col cols="1"  align-self="stretch" >
-                    <b-button variant="danger" @click="deleteArt">x</b-button>
+                <b-col class="but" cols="1"  align-self="stretch" >
+                    <b-button variant="success" @click="deleteArt">EDIT</b-button>
+                    <b-button variant="danger" @click="deleteArt">X</b-button>
                 </b-col>
             </b-row>
         </b-container>
@@ -38,5 +39,11 @@ export default {
 </script>
 
 <style>
+.but{
+    display: flex;
+    justify-content: space-around;
+}
+
+
    
 </style>

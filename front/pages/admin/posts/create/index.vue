@@ -44,6 +44,7 @@ export default {
             this.description = '';
         }
     },
+    layout: 'blog'
 };
 </script>
 
