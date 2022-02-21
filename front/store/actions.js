@@ -25,6 +25,26 @@ export default {
         commit('GET_ARTICLES',art)
 
         
+    },
+    createArticle({commit},article){
+        console.log(article)
+        this.$axios.post('articles',{
+            data: { Name : article.Name, 
+                    description : article.description,}
+      
+            
+        });
+
+    },
+    //permet de supprimer un article via strapi
+    deleteArticle({commit},id){
+        try {
+            this.$axios.delete(`articles/${id}`)
+            commit('DELETE',id)
+        } catch (error) {
+            console.log(error)
+        }
+        
     }
 
 
