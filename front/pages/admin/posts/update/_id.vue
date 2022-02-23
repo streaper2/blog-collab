@@ -10,7 +10,7 @@ export default {
   //a ameliorer pour tester de le recup avec le getter
    computed:{
     article(){  
-      return this.$store.state.articles[this.$route.params.id -1]
+      return this.$store.state.articles.filter(article => article.id == this.$route.params.id)[0]
     },
   },
 }
